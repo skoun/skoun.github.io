@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Asistent – Privacy Policy</title>
+<style>
+  :root { --bg:#fafaf8; --fg:#1d1d1b; --muted:#5f5f5a; --link:#1f5fbf; }
+  @media (prefers-color-scheme: dark) { :root { --bg:#161615; --fg:#ececea; --muted:#a3a39e; --link:#8ab4ff; } }
+  body { margin:0; background:var(--bg); color:var(--fg); font:16px/1.6 system-ui, sans-serif; }
+  main { max-width:720px; margin:0 auto; padding:48px 16px; }
+  h1 { margin:0 0 4px; font-size:2rem; }
+  h2 { margin-top:32px; font-size:1.25rem; }
+  .muted { color:var(--muted); }
+  a { color:var(--link); }
+  ul { padding-left:20px; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Privacy Policy</h1>
+  <p class="muted">Asistent · Last updated: 4 November 2026 · <a href="./">Home</a></p>
+
+  <h2>Who operates Asistent</h2>
+  <p>Asistent is a private, self-hosted application operated by Ivo Klčo (Slovakia) for personal use only.
+  Contact: <a href="mailto:skounnn@gmail.com">skounnn@gmail.com</a>.
+  The only users are the operator's own Google accounts. It is not offered to the public.</p>
+
+  <h2>What Google data it accesses</h2>
+  <ul>
+    <li><strong>Gmail (read-only):</strong> messages and attachments, to find invoices, payment requests and due dates.</li>
+    <li><strong>Google Calendar:</strong> reading existing events, and creating reminder events only in a dedicated calendar named “Asistent”.</li>
+    <li><strong>Google Contacts (read-only):</strong> names and dates, to recognise senders and show name days.</li>
+  </ul>
+  <p>Asistent never sends, modifies or deletes email, never changes other calendars, and never makes payments.</p>
+
+  <h2>How the data is used</h2>
+  <p>The data is used only to show the operator a personal overview of bills, deadlines and reminders.
+  Short excerpts of email text may be sent to the Anthropic API (Claude) to extract amounts and due dates;
+  the model has no tools and the results are checked against the original text. Anthropic does not use API data to train models.</p>
+
+  <h2>Storage and security</h2>
+  <p>Data is stored on a private server in Germany (Hetzner, Falkenstein), reachable only over a private network (Tailscale)
+  and protected by the owner's password. OAuth tokens are stored only on that server, in a file readable only by the application, and are never logged
+  or committed to source code.</p>
+
+  <h2>Sharing</h2>
+  <p>Google user data is not sold, not shared with third parties and not used for advertising.
+  The only processor is the Anthropic API as described above.</p>
+
+  <h2>Google API Services User Data Policy</h2>
+  <p>Asistent's use and transfer of information received from Google APIs adheres to the
+  <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>,
+  including the Limited Use requirements.</p>
+
+  <h2>Retention and deletion</h2>
+  <p>Data is kept only as long as needed for the overview. Access can be revoked at any time at
+  <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>; after revocation no new data is read.
+  Stored data is deleted on request sent to the contact address above.</p>
+
+  <hr>
+  <section id="sk" lang="sk">
+    <h2>Po slovensky (skrátene)</h2>
+    <p>Asistenta prevádzkuje Ivo Klčo na osobné použitie (kontakt: skounnn@gmail.com). Používajú ho iba jeho vlastné Google účty.
+    Z Gmailu, kalendára a kontaktov iba číta; pripomienky zapisuje len do vlastného kalendára „Asistent“.
+    Nikdy neposiela ani nemaže emaily a neplatí. Krátke úryvky emailov môžu ísť do Anthropic API na vytiahnutie súm a termínov.
+    Dáta sú na súkromnom serveri v Nemecku dostupnom iba cez Tailscale. Nič sa nepredáva ani nezdieľa.
+    Prístup sa dá kedykoľvek odvolať na myaccount.google.com/permissions; uložené dáta zmažem na požiadanie.</p>
+  </section>
+</main>
+</body>
+</html>
